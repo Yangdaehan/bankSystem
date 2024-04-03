@@ -95,23 +95,6 @@ public class Main {
         account.deposit(amount);
         System.out.println("입금이 완료되었습니다.");
 
-
-        /*for(int i =0; i<index;i++){
-            if(tmpAccountNum == accounts[i].getAccountNumber()){
-                System.out.println("입금하려는 금액을 입력하세요.");
-                int money = scanner.nextInt();
-                if (money <0){
-                    System.out.println("0원 이하를 입금 할 수 없습니다.");
-                    break;
-                }
-                int tmpMoney = accounts[i].getBalance();
-                accounts[i].setBalance(money+tmpMoney);
-            }
-            else {
-                System.out.println("입금하려는 계좌가 존재하지 않습니다.");
-            }
-        }*/
-
     }
 
     private static void retrieveAccount() {
@@ -135,23 +118,6 @@ public class Main {
         } else {
             System.out.println("비밀번호가 올바르지 않습니다.");
         }
-
-      /*  for(int i =0; i<index;i++){
-            if(tmpAccountNum == accounts[i].getAccountNumber()){
-                System.out.println("조회하려는 계좌번호의 비밀번호를 입력하세요.");
-                String tmpPwd = scanner.next();
-                if(tmpPwd == accounts[i].getPwd()){
-                    accounts[i].printAccounts();
-                }
-                else {
-                    System.out.println("비밀번호가 맞지 않습니다.");
-                }
-            }
-            else {
-                System.out.println("조회하려는 계좌가 존재하지 않습니다.");
-            }
-        }
-*/
     }
 
     private static Account findAccountByAccountNumber(String accountNumber) {
